@@ -1,0 +1,60 @@
+html, body{
+    height: 100%;
+    font-weight: 800;
+  }
+  
+  body{
+    background: #000;
+    font-family: Arial;
+  }
+  
+  svg {
+      display: flex;
+      font: 15em 'Gotham Black';
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      justify-content: center;
+  }
+  
+  text {
+    letter-spacing: 10px;
+  }
+  
+  .letter {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .letter:nth-child(1){
+      stroke: #EF8F47;
+      animation-delay: -1;
+  }
+  
+  .letter:nth-child(2){
+      stroke: #EB3978;
+      animation-delay: -2s;
+  }
+  
+  .letter:nth-child(3){
+      stroke: #7D39EB;
+      animation-delay: -3s;
+  }
+  
+  .letter:nth-child(4){
+      stroke: #66A4F7;
+      animation-delay: -4s;
+  }
+  
+  .letter:nth-child(5){
+      stroke: #93E4FF;
+      animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+  }
